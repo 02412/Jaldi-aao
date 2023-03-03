@@ -1,73 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You r coming</title>
-    <link rel="stylesheet" href="partner.css">
-
-    <button tabindex="-1" id="bocchi2">Nahh</button>
-    <script>
-        const button2 = document.getElementById('bocchi2');
-        let left = 40;
-        button2.addEventListener('mouseover', function() {
-          if(left == 40){
-            left = 35;
-          }else{
-            left = 40;
-          }
-          this.style.left = left + '%';
-        });
-        if (window.matchMedia("(max-width: 700px)").matches){
-          let left = 30;
-          button2.addEventListener('mouseenter', function() {
-          if(left == 30){
-            left = 15;
-          }else{
-            left = 30;
-          }
-          this.style.left = left + '%';
-        });
-        }
-        </script>
-        
-
+<title>Hiiiiii</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
 </head>
 <body>
+<p>Are u coming bruh?</p>
+<img src="https://media.tenor.com/2u2MzKTeGQAAAAAM/dragon-so-will-you-come.gif">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+
+<button id="bocchi1" onclick="openModal()">YES SURE,WHY NOT!</button>
+
+
+<dialog id="dialog">
+<img  class="pic1" src="https://media.tenor.com/9oTHyriNx0YAAAAM/as-fast-as-possible-klaus-gaming.gif">
     
-<p class="heading">Are you coming bruh?</p>
-<img class="pic" src="https://www.bing.com/images/search?view=detailV2&ccid=HniYguxh&id=8A490CAD3848E502A55248369799A478E820E769&thid=OIP.HniYguxhpdMJXfkvWybXbgHaHa&mediaurl=https%3a%2f%2fmedia1.tenor.com%2fimages%2f1e789882ec61a5d3095df92f5b26d76e%2ftenor.gif%3fitemid%3d20135284&exph=640&expw=640&q=are+you+coming+gif&simid=608028461755209407&FORM=IRPRST&ck=A36A9E320EE9714875F6E7B9D2A20E3B&selectedIndex=21" alt="">
-<title>Bocchi</title>
-
-
-
-
-    <button id="bocchi1" onclick="openModal()">YES OFC</button>
-
-
-    <dialog id="dialog">
-        <img  class="pic1" src="https://www.bing.com/images/search?view=detailV2&ccid=IPq39X%2b7&id=C8A8BDC2AA577B198AF7037905C49E5F44E4FD21&thid=OIP.IPq39X-7sjLB4VT72YDGlAHaGL&mediaurl=https%3a%2f%2fmedia3.giphy.com%2fmedia%2fRm3Nj59SVXvrblfTom%2fgiphy.gif&exph=400&expw=480&q=are+you+coming+gif&simid=607997052668172887&FORM=IRPRST&ck=9CA1946B5C56BFACC90480B38D37D525&selectedIndex=6" width="210px" height="250px" alt="">
-        <br/>
-        <center><p>YEAH I KNEW IT!!! OK COME FAST THEN</p></center>
-        
-    <button onclick="closeModal()" class="right">close ><</3></button>
-    </dialog>
+    <center><p>HEHEHEHEHE I KNEW IT!!!</p></center>
+    
+<button onclick="closeModal()" class="right">close ><</3></button>
+</dialog>
 
 
 <script>
-    var dailog = document.getElementById("dialog"); 
+var dailog = document.getElementById("dialog"); 
 
 function openModal() { 
-    
-      dailog.showModal();
+
+  dailog.showModal();
 } 
 
 function closeModal() { 
-    dailog.close(); 
+dailog.close(); 
 }
 </script>
 
-
+</script>
 </body>
 </html>
